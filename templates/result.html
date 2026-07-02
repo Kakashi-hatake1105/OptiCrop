@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
   <nav class="navbar">
@@ -23,8 +25,7 @@
       <p class="result-label">Optimal Crop Recommendation</p>
       <h1 class="result-crop">{{ crop }}</h1>
       <div class="confidence-bar-wrap">
-        <div class="confidence-bar"
-             style="width: {{ confidence }}%"></div>
+        <div class="confidence-bar" style="width: {{ confidence }}%"></div>
       </div>
       <p class="confidence-text">Confidence: <strong>{{ confidence }}%</strong></p>
     </div>
@@ -85,4 +86,5 @@
   </footer>
 
 </body>
+
 </html>
